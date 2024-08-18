@@ -1,0 +1,345 @@
+/* <!-- NOTE1: 
+ you can put maram's html search task instead these lines
+ 46
+ 47
+ 48-->
+
+
+<!-- 
+ NOTE2:
+
+ U CAN PUT HER CSS CODE INSTEAD LINES FROM 
+ LINE 96 TO 103
+
+--> */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+}
+
+body {
+    background-color: #effdf5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transform: scale(1.05); 
+    transform-origin: top left; 
+    overflow-x: hidden; 
+}
+
+h1 {
+    color: #0e2e50;
+}
+.container {
+    background-color: white;
+    width: 85%;
+    min-height:400px;
+    margin-left:80px;
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+}
+
+.problist_header {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.problist_header h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #0e2e50;
+}
+
+.breadcrumb-container {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-container a {
+    margin-right: 5px;
+    color: rgb(0, 185, 142);
+    text-decoration: none;
+}
+
+.breadcrumb-container a:hover {
+    color: rgb(10, 107, 75);
+}
+
+.my_properylist {
+    font-size: 1em;
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+.image_on_right_side {
+    flex: 1;
+    background-image: url("header.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.search {
+    background-color: rgb(0, 185, 142);
+    width: 85%;
+    padding: 20px;
+    margin-left:80px;
+    color: white;
+    text-align: center;
+}
+
+.propertylisting-container {
+    background-color: white;
+    width: 85%;
+    padding: 30px;
+    display: flex;
+    /* margin: 73px; */
+    margin-left:80px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.problist_header2 {
+    flex: 1;
+}
+
+.problist_header2 h1 {
+    margin-bottom: 20px;
+    font-size:50px;
+    color: #0e2e50;
+}
+
+p {
+    opacity: 0.6;
+}
+
+.category {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.category a {
+    text-decoration: none;
+    border: 1px solid rgb(0, 185, 142);
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.category a:hover {
+    background-color: rgb(0, 185, 142);
+    color: white;
+}
+
+.category a.active {
+    background-color: rgb(0, 185, 142);
+    color: white;
+}
+
+.property-listings-container {
+    background-color: white;
+    width: 85%;
+    padding: 20px;
+    margin-left:80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.property-card {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    min-height: 400px;
+    background-color: #FFFFFF;
+    transition: transform 0.7s ease;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.property-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.7s ease;
+    border-radius: 8px 8px 0 0;
+}
+
+.property-card:hover img {
+    transform: scale(1.1);
+}
+
+.statues {
+    position: absolute;
+    margin: 20px;
+    background-color: rgb(0, 185, 142);
+    padding: 10px;
+    text-transform: capitalize;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.parity {
+    position: absolute;
+    margin: 20px;
+    margin-top: 230px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-transform: capitalize;
+    color: rgb(0, 185, 142);
+    font-size: 15px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.property-card .price {
+    font-weight: bold;
+    color: rgb(0, 185, 142);
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.property-card .txt {
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    display: block;
+}
+
+.property-card .txt:hover {
+    color: rgb(0, 185, 142);
+}
+
+.property-card .location {
+    color: #666;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.property-card .location i {
+    margin-left: 11px;
+    color: rgb(0, 185, 142);
+}
+
+.property-card .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+    border-top: 1px dashed rgb(0, 185, 142);
+    padding: 20px;
+}
+
+.property-card .details p {
+    margin: 0;
+    padding: 0 10px;
+    border-right: 2px dashed rgb(0, 185, 142);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.property-card .details p:last-child {
+    border-right: none;
+}
+
+.bttn {
+    text-decoration: none;
+    background-color: #00b98e;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.bttn:hover {
+    background-color: #26c49f;
+}
+
+.price {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.txt {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #0e2e50;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .container,
+    .propertylisting-container,
+    .property-listings-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .problist_header h1,
+    .problist_header2 h1 {
+        font-size: 1.5em;
+    }
+
+    .property-card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+    .search {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%; /* Make it full width */
+    }
+}
+
+@media (max-width: 768px) {
+    .property-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: auto; /* Adjust height for better responsiveness */
+    }
+
+    .problist_header h1,
+    .problist_header2 h1 {
+        font-size: 1.2em;
+    }
+    
+    .category {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .category a {
+        width: 100%;
+        text-align: center;
+    }
+    .search {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}

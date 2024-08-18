@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="proplist.css">
+</head>
+
+
+<!-- NOTE1: 
+ you can put maram's html search task instead these lines
+ 46
+ 47
+ 48-->
+
+
+<!-- 
+ NOTE2:
+
+ U CAN PUT HER CSS CODE INSTEAD LINES FROM 
+ LINE 96 TO 103
+
+-->
+
+
+<body>
+    <!-- Start of main content -->
+    <!-- <div class="page-container"> -->
+    <div class="main-content">
+
+        <!-- Start of work "property list" -->
+        <div class="container">
+            <div class="problist_header">
+                <h1>Property List</h1>
+                <div class="breadcrumb-container">
+                    <a href="homepage">HOME / </a>
+                    <a href="pages_page">PAGES / </a> 
+                    <p class="my_properylist">Property List</p>
+                </div>
+            </div>
+            <div class="image_on_right_side"></div>
+        </div>
+        
+        <!-- MARAM'S SEARCHING PART -->
+        <div class="search">
+            MARAM
+        </div>
+        <!-- END OF MARAM'S PART -->
+
+
+        <!-- START OF INTRODUCTION TO PAGE -->
+
+        <div class="propertylisting-container">
+            <div class="problist_header2">
+                <h1>Property Listing</h1>
+                <p class="p-propertylist">Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit diam justo sed rebum.</p>
+            </div>
+            <div class="category">
+                <a class="featured" href="#">Featured</a>
+                <a class="sell" href="#">For Sell</a>
+                <a class="rent" href="#">For Rent</a>  
+            </div>
+        </div>
+
+
+
+        <!-- JavaScript for active link -->
+        <script>
+            document.querySelectorAll('.category a').forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent the default link behavior
+                    document.querySelectorAll('.category a').forEach(a => a.classList.remove('active')); // Remove 'active' class from all links
+                    this.classList.add('active'); // Add 'active' class to the clicked link
+                });
+            });
+        </script>
+<!-- END OF INTRODUCTION -->
+
+
+
+
+        <!-- START OF CARDS -->
+        <div class="property-listings-container">
+            <div class="property-card">
+                <div class="statues">for rent</div> <!-- New div for label -->
+                <div class="parity">Appartment</div>
+                <img src="property-1.jpg" alt="Property Image">
+                <div class="price">$15000</div>
+                <div>
+                    <a href="problist.html" class="txt" style="font-size: 20px; color: #0e2e50;">Golden Urban House For Sell</a>
+                </div>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                <div class="details">
+                    <p>1000 Sqft</p>
+                    <p>3 Bed</p>
+                    <p>2 Bath</p>
+                </div>
+            </div>
+            
+            <div class="property-card">
+                <div class="statues">for sell</div> 
+                <div class="parity">Villa</div>
+                <img src="property-2.jpg" alt="Property Image">
+                <div class="price">$13500</div>
+                <div>
+                    <a href="problist.html" class="txt" style="font-size: 20px; color: #0e2e50;">Modern Apartment</a>
+                </div>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> 456 Avenue, Los Angeles, USA</p>
+                <div class="details">
+                    <p>1500 Sqft</p>
+                    <p>4 Bed</p>
+                    <p>3 Bath</p>
+                </div>
+            </div>
+            
+            <div class="property-card">
+                <div class="statues">for rent</div> <!-- New div for label -->
+                <div class="parity">Office</div>
+                <img src="property-3.jpg" alt="Property Image">
+                <div class="price">$21000</div>
+                <div>
+                    <a href="problist.html" class="txt" style="font-size: 20px; color: #0e2e50;">Luxury Villa</a>
+                </div>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> 789 Boulevard, Miami, USA</p>
+                <div class="details">
+                    <p>2000 Sqft</p>
+                    <p>5 Bed</p>
+                    <p>4 Bath</p>
+                </div>
+            </div>
+            
+            <div class="property-card">
+                <div class="statues">for sell</div> 
+                <div class="parity">Building</div>
+                <img src="property-4.jpg" alt="Property Image">
+                <div class="price">$9000</div>
+                <div>
+                    <a href="problist.html" class="txt" style="font-size: 20px; color: #0e2e50;">Cozy Cottage</a>
+                </div>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> 321 Road, Orlando, USA</p>
+                <div class="details">
+                    <p>800 Sqft</p>
+                    <p>2 Bed</p>
+                    <p>1 Bath</p>
+                </div>
+            </div>
+            
+            <div class="property-card">
+                <div class="statues">for rent</div> 
+                <div class="parity">Home</div>
+                <img src="property-5.jpg" alt="Property Image">
+                <div class="price">$17500</div>
+                <div>
+                    <a href="problist.html" class="txt" style="font-size: 20px; color: #0e2e50;">Spacious Farmhouse</a>
+                </div>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> 654 Country Lane, Texas, USA</p>
+                <div class="details">
+                    <p>2500 Sqft</p>
+                    <p>4 Bed</p>
+                    <p>3 Bath</p>
+                </div>
+            </div>
+            
+            <div class="property-card">
+                <div class="statues">for sell</div>
+                <div class="parity">Shop</div>
+                <img src="property-6.jpg" alt="Property Image">
+                <div class="price">$12500</div>
+                <div>
+                    <a href="problist.html" class="txt" style="font-size: 20px; color: #0e2e50;">Urban Apartment</a>
+                </div>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> 987 Main Street, Chicago, USA</p>
+                <div class="details">
+                    <p>1200 Sqft</p>
+                    <p>3 Bed</p>
+                    <p>2 Bath</p>
+                </div>
+            </div>
+            <a href="#" class="bttn">Browse More Property</a>
+        </div>
+        <!-- End of work "property list" -->
+
+    </div> 
+    <!-- End of main content -->
+</body>
+</html>

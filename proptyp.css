@@ -1,0 +1,241 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+}
+
+body {
+    background-color: #effdf5;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #0e2e50;
+    text-align: center;
+}
+
+.main-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Main container styles */
+.container {
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+}
+
+.proptyp_header {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.proptyp_header h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #0e2e50;
+}
+
+.breadcrumb-container {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-container a {
+    margin-right: 5px;
+    color: rgb(0, 185, 142);
+    text-decoration: none;
+}
+
+.breadcrumb-container a:hover {
+    color: rgb(10, 107, 75);
+}
+
+.my_properytyp {
+    font-size: 18px;
+    margin-left: 5px;
+    white-space: nowrap;
+    opacity: 0.6;
+}
+
+.image_on_right_side {
+    width: 50%;
+    background-image: url("header.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+.search {
+    background-color: rgb(0, 185, 142);
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.proptypppcont {
+    background-color: white;
+    width: 100%;
+    min-height: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.probtyp_header2 h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #0e2e50;
+}
+
+.probtyp_header2 p {
+    opacity: 0.6;
+}
+
+/* Card Container Styles */
+.card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.card {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px dashed #d0ffe4;
+    transition: 0.3s ease;
+    outline: 15px solid #e3ffef;
+    width: 260px;
+    height: 200px;
+    margin-top: 35px;
+}
+
+.card:hover {
+    background-color: #00b98e;
+    color: white;
+    border: none;
+}
+
+.card-image {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    border: 1px dotted rgb(5, 114, 83);
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #0e2e50;
+}
+
+.card:hover h3,
+.card:hover p {
+    color: white;
+}
+
+.card p {
+    margin: 0;
+    font-size: 16px;
+    color: #26c49f;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.card-container p {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .proptyp_header, .image_on_right_side {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image_on_right_side {
+        background-size: contain;
+        background-position: center;
+        height: 250px;
+    }
+
+    .search {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .proptypppcont {
+        padding: 15px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+
+    .card {
+        width: auto;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .proptyp_header h1 {
+        font-size: 30px;
+    }
+
+    .search {
+        font-size: 16px;
+    }
+}
