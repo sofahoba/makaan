@@ -57,7 +57,7 @@
                 
                 <div class="team-card">
                     <div class="photo-container">
-                        <img src="download (2).jpg" alt="Agent 1" class="team-photo">
+                        <img src="wtf_is_this.jpg" alt="Agent 1" class="team-photo">
                         <div class="social-links">
                             <a href="#"><i class="fab fa-facebook"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -72,7 +72,7 @@
 
                 <div class="team-card">
                     <div class="photo-container">
-                        <img src="download (1).jpg" alt="Agent 2" class="team-photo">
+                        <img src="yasmiine.jpg" alt="Agent 2" class="team-photo">
                         <div class="social-links">
                             <a href="#"><i class="fab fa-facebook"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -87,7 +87,7 @@
 
                 <div class="team-card">
                     <div class="photo-container">
-                        <img src="download (1).jpg" alt="Agent 3" class="team-photo">
+                        <img src="hwa_shab7on.jpg" alt="Agent 3" class="team-photo">
                         <div class="social-links">
                             <a href="#"><i class="fab fa-facebook"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -102,7 +102,7 @@
 
                 <div class="team-card">
                     <div class="photo-container">
-                        <img src="download (1).jpg" alt="Agent 4" class="team-photo">
+                        <img src="robaaa.jpg" alt="Agent 4" class="team-photo">
                         <div class="social-links">
                             <a href="#"><i class="fab fa-facebook"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -117,7 +117,7 @@
 
                 <div class="team-card">
                     <div class="photo-container">
-                        <img src="download (2).jpg" alt="Agent 5" class="team-photo">
+                        <img src="adek_bl-box.jpg" alt="Agent 5" class="team-photo">
                         <div class="social-links">
                             <a href="#"><i class="fab fa-facebook"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -131,8 +131,34 @@
                 </div>
             </div>
         </div>
+        <!-- END OF Team Section with Scroll Arrows -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const cards = document.querySelectorAll('.team-card');
+        
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.1
+                };
+        
+                const observerCallback = function(entries, observer) {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                };
+        
+                const observer = new IntersectionObserver(observerCallback, observerOptions);
+        
+                cards.forEach(card => {
+                    observer.observe(card);
+                });
+            });
+            </script>
     </div>
-    <!-- END OF Team Section with Scroll Arrows -->
 
 
     <!-- END OF THE PAGE -->
